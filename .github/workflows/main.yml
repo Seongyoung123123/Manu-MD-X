@@ -18,10 +18,10 @@ jobs:
 
     steps:
 name: Checkout repository
-      uses: actions
+      uses: actions/checkout
 
 name: Set up Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node
       with:
         node-version: ${{ matrix.node-version }}
 
